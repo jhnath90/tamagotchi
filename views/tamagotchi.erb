@@ -1,0 +1,19 @@
+<meta http-equiv="refresh" content="5; URL=/tamagotchi">
+<h1><%= @@my_pet.name() %></h1>
+
+<ul>
+  <li>Alive: <%= @@my_pet.is_alive() %> </li>
+  <li>Food Level: <%= @@my_pet.food_level() %></li>
+  <li>Activity Level: <%= @@my_pet.activity_level() %></li>
+  <li>Sleep Level: <%= @@my_pet.sleep_level() %></li>
+</ul>
+
+<form action='/feed' method="post">
+  <button>Feed</button>
+</form>
+<form action='/play' method="post">
+  <button>Play</button>
+</form>
+<form action='/sleep' method="post">
+  <button>Sleep</button>
+</form>    
